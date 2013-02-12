@@ -23,7 +23,7 @@ Redmine::Plugin.register :clipboard_image_paste do
   $clipboard_image_paste_config = YAML::load_file(configfile)
 
   redmineVer = Redmine::VERSION.to_a
-  $clipboard_image_paste_has_jquery = redmineVer[0] > 2 || (redmineVer[0] == 2 && redmineVer[1] >= 2)
+  $clipboard_image_paste_has_jquery = redmineVer[0] > 2
 end
 
 
